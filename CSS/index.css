@@ -1,5 +1,9 @@
-header h1{
+header{
     background-color: rgb(121, 171, 184);
+}
+
+header h1{
+    
 }
 
 header nav{
