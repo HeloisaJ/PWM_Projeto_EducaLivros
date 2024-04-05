@@ -1,6 +1,11 @@
 # PWM-Projeto-2
 ## EQUIPE
+- Flávio Simões
+- Heloísa Fernanda
+- João Torres
+- José Almir
 
 ## REQUISITOS MÍNIMOS
 
-## COISAS A MAIS
+## REQUISITOS ADICIONAIS
+- Utilização de javascript
