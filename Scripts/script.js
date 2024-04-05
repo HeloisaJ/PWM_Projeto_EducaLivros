@@ -1,1 +1,1 @@
-document.getElementById('t').innerHTML = 'THE SCRIPT WORKS'
+document.getElementById('t').innerHTML = 'THE SCRIPT WORKS!'
