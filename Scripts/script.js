@@ -1,0 +1,1 @@
+document.getElementById('t').innerHTML = 'THE SCRIPT WORKS'
