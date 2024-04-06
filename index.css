@@ -1,16 +1,26 @@
 :root{
-    --cor-Barra-Nav : rgb(252, 156, 83);
+    --cor-Barra-Nav : #ffffff;
     --cor-hover: rgb(59, 217, 209);
-    --cor-letras-Menu: rgb(9, 93, 37);
+    --cor-letras-Menu: #800000;
+    --cor-header: #05050549;
+}
+
+html {
+    background-image: url("../Images/PWM2bg.jpeg");
 }
 
 header{
-    background-color: rgb(121, 171, 184);
+    border-top: 1rem solid var(--cor-letras-Menu);
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--cor-header);
 }
 
 header h1{
     text-align: center;
 }
+
+/* Barra de Navegação */
 
 .MenuPrincipal ul{
     list-style-type: none;
@@ -46,6 +56,7 @@ header h1{
 
 .MenuPrincipal ul li:hover ul{
     display: block;
+    width: 300px;
 }
 
 .MenuPrincipal ul ul li a{
