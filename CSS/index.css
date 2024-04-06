@@ -1,3 +1,9 @@
+:root{
+    --cor-Barra-Nav : rgb(252, 156, 83);
+    --cor-hover: rgb(59, 217, 209);
+    --cor-letras-Menu: rgb(9, 93, 37);
+}
+
 header{
     background-color: rgb(121, 171, 184);
 }
@@ -6,15 +12,43 @@ header h1{
     text-align: center;
 }
 
-header nav{
-    background-color: lightgreen;
-}
-
-ul{
+.MenuPrincipal ul{
     list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: var(--cor-Barra-Nav);
 }
 
-nav li{
-    display: inline;
-    padding-right: 20px;
+.MenuPrincipal ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.MenuPrincipal ul li a{
+    color: var(--cor-letras-Menu);
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.MenuPrincipal ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+.MenuPrincipal ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    width: 10em;
+}
+
+.MenuPrincipal ul li:hover ul{
+    display: block;
+}
+
+.MenuPrincipal ul ul li a{
+    display: inline-block;
+    width: max-content;
 }
