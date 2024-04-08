@@ -1,7 +1,7 @@
 :root{
-    --cor-Barra-Nav : #ffffff;
+    --cor-Barra-Nav : rgb(40, 37, 37);
     --cor-hover: whitesmoke;
-    --cor-letras-Menu: black;
+    --cor-letras-Menu: white;
     --cor-border-top: maroon;
     --cor-header: maroon;
 }
@@ -13,6 +13,7 @@ header{
 }
 header h1{
     text-align: center;
+    color: white;
 }
 html, body {
     margin: 0;
