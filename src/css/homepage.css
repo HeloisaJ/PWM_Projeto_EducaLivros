@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h2 {
+    color: maroon;
+}
+hr {
+    border: 1px solid maroon;
+}
+.botao {
+    display: inline;
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
