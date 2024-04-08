@@ -1,25 +1,32 @@
 :root{
-    --cor-Barra-Nav : #ffffff;
-    --cor-hover: rgb(59, 217, 209);
-    --cor-letras-Menu: #800000;
-    --cor-header: #05050549;
+    --cor-Barra-Nav : rgb(40, 37, 37);
+    --cor-hover: whitesmoke;
+    --cor-letras-Menu: white;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
 }
-
-html {
-    background-image: url("../Images/PWM2bg.jpeg");
-}
-
 header{
-    border-top: 1rem solid var(--cor-letras-Menu);
-    width: 80%;
+    border-top: 1rem solid var(--cor-border-top);
+    width: 100%;
     margin: 0 auto;
     background-color: var(--cor-header);
 }
-
 header h1{
     text-align: center;
+    color: white;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
+iframe {
+    display: block; 
+    width: 100%;
+    height: 100vh; 
+    border: none; 
+}
 /* Barra de Navegação */
 
 .MenuPrincipal ul{
