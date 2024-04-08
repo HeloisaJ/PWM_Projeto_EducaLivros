@@ -1,11 +1,12 @@
 :root{
     --cor-Barra-Nav : #ffffff;
-    --cor-hover: rgb(59, 217, 209);
-    --cor-letras-Menu: #800000;
-    --cor-header: #05050549;
+    --cor-hover: whitesmoke;
+    --cor-letras-Menu: black;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
 }
 header{
-    border-top: 1rem solid var(--cor-letras-Menu);
+    border-top: 1rem solid var(--cor-border-top);
     width: 100%;
     margin: 0 auto;
     background-color: var(--cor-header);
