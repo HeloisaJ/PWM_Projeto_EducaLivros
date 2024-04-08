@@ -48,10 +48,13 @@ iframe {
     font-size: large;
     padding: 10px;
     transition: background .3s;
+    
 }
 
 .MenuPrincipal ul li a:hover{
     background-color: var(--cor-hover);
+    color: black;
+    width: 280px;
 }
 
 .MenuPrincipal ul ul{
