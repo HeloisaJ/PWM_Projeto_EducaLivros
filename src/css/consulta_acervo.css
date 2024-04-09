@@ -7,25 +7,36 @@
     --footer-background: #0b0b0b;
 }
 
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 /* TOP BAR */
 
 header{
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-top: 1rem solid var(--cor-border-top);
-    width: 100%;
-    margin: 0 auto;
+    /*border-top: 1rem solid var(--cor-border-top);*/
     background-color: var(--cor-header);
-    padding-bottom: 20px;
-    display: flex;
+    padding-top: 20px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-header h1{
-    text-align: center;
-    color: white;
+header img{
+    float: left;
+    height: 200px;
+    position: relative;
+    top: -50px;
 }
 
+form{
+    margin-top: 25px;
+}
 
 /* SEATCH BAR */
 .search {
@@ -36,16 +47,17 @@ header h1{
 }
 
 .search input[type=text] {
-    width: 300px;
-    height: 25px;
-    border: none;
+    width: 400px;
+    height: 30px;
+    border: 1px solid;
+    text-align: center;
 }
 
 
 .search button {
     background-color: #0074D9;
     color: #f2f2f2;
-    height: 26px;
+    height: 30px;
     width: 26px;
     margin-right: 16px;
     margin-top: 0;
@@ -55,19 +67,78 @@ header h1{
     cursor: pointer;
 }
 
-.search i{
+.search button i{
     position: relative;
+}
+
+/* NAV */
+
+.MenuPrincipal{
+    position: relative;
+    top: 20px;
+}
+
+.MenuPrincipal ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: var(--cor-Barra-Nav);
+}
+
+.MenuPrincipal ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.MenuPrincipal ul li a, .MenuPrincipal ul li a.dropbtn{
+    color: var(--cor-letras-Menu);
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    transition: background .3s;
+}
+
+.MenuPrincipal ul li a{
+    padding: 12px;
+}
+
+.MenuPrincipal ul li a.dropbtn{
+    padding: auto;
+}
+
+.MenuPrincipal .dropdown-content a{
+    display: block;
+    max-width: 180px;
+}
+
+.MenuPrincipal .dropdown-content{
+    display: none;
+    position: absolute;
+    color: var(--cor-letras-Menu);
+    background-color: var(--cor-Barra-Nav);
+    width: 180px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.268);
+    z-index: 1;
+}
+
+.MenuPrincipal ul .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.MenuPrincipal ul li a:hover, .MenuPrincipal .dropdown:hover .dropbtn, .MenuPrincipal .dropdown-content a:hover{
+    background-color: var(--cor-hover);
+    color: black;
 }
 
 /* FOOTER */
 
 footer {
     background-color: var(--footer-background);
+    position: fixed;
     left: 0;
+    bottom: 0;
     padding-bottom: 30px;
     padding-top: 10px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     color: #fff;
     font-size: 14px;
