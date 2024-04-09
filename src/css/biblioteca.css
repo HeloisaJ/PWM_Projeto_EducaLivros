@@ -1,3 +1,31 @@
+:root{
+    --cor-Barra-Nav : rgb(40, 37, 37);
+    --cor-hover: rgb(234, 232, 232);
+    --cor-letras-Menu: white;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
+}
+
+/* TOP BAR */
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 1rem solid var(--cor-border-top);
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor-header);
+    padding-bottom: 20px;
+    display: flex;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+
 /* SEATCH BAR */
 
 .search input[type=text] {
@@ -8,14 +36,13 @@
 }
 
 .search {
-    float: right;
+    display: inline-block;
     margin: 7px;
 }
 
 .search button {
     background-color: #0074D9;
     color: #f2f2f2;
-    float: right;
     padding: 5px 10px;
     margin-right: 16px;
     font-size: 12px;
@@ -29,7 +56,8 @@
 footer {
     background-color: maroon;
     left: 0;
-    padding: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
