@@ -1,0 +1,145 @@
+:root{
+    --cor-Barra-Nav : rgb(40, 37, 37);
+    --cor-hover: rgb(234, 232, 232);
+    --cor-letras-Menu: white;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
+    --footer-background: #0b0b0b;
+}
+
+/* TOP BAR */
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 1rem solid var(--cor-border-top);
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor-header);
+    padding-bottom: 20px;
+    display: flex;
+}
+
+header h1{
+    text-align: center;
+    color: white;
+}
+
+
+/* SEATCH BAR */
+.search {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.search input[type=text] {
+    width: 300px;
+    height: 25px;
+    border: none;
+}
+
+
+.search button {
+    background-color: #0074D9;
+    color: #f2f2f2;
+    height: 26px;
+    width: 26px;
+    margin-right: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.search i{
+    position: relative;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--footer-background);
+    left: 0;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    flex: 1;
+    margin: 0 0px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contato p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.contato a {
+    color: #fff;
+}
+
+.social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social i {
+    text-align: center;
+    font-size: 24px;
+}
+
+.legal {
+    margin-top: 20px;
+}
+
+.legal p {
+    color: #fff;
+    text-align: center;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Animation Hover*/
