@@ -1,6 +1,6 @@
 :root{
     --cor-Barra-Nav : rgb(40, 37, 37);
-    --cor-hover: whitesmoke;
+    --cor-hover: rgb(234, 232, 232);
     --cor-letras-Menu: white;
     --cor-border-top: maroon;
     --cor-header: maroon;
@@ -41,35 +41,42 @@ iframe {
     position: relative;
 }
 
-.MenuPrincipal ul li a{
+.MenuPrincipal ul li a, .MenuPrincipal ul li a.dropbtn{
     color: var(--cor-letras-Menu);
     text-decoration: none;
     display: inline-block;
     font-size: large;
-    padding: 10px;
     transition: background .3s;
-    
 }
 
-.MenuPrincipal ul li a:hover{
+.MenuPrincipal ul li a{
+    padding: 12px;
+}
+
+.MenuPrincipal ul li a.dropbtn{
+    padding: auto;
+}
+
+.MenuPrincipal .dropdown-content a{
+    display: block;
+    max-width: 180px;
+}
+
+.MenuPrincipal .dropdown-content{
+    display: none;
+    position: absolute;
+    color: var(--cor-letras-Menu);
+    background-color: var(--cor-Barra-Nav);
+    width: 180px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.268);
+    z-index: 1;
+}
+
+.MenuPrincipal ul .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.MenuPrincipal ul li a:hover, .MenuPrincipal .dropdown:hover .dropbtn, .MenuPrincipal .dropdown-content a:hover{
     background-color: var(--cor-hover);
     color: black;
-    width: 280px;
-}
-
-.MenuPrincipal ul ul{
-    display: none;
-    left: 0;
-    position: absolute;
-    width: 10em;
-}
-
-.MenuPrincipal ul li:hover ul{
-    display: block;
-    width: 300px;
-}
-
-.MenuPrincipal ul ul li a{
-    display: inline-block;
-    width: max-content;
 }
