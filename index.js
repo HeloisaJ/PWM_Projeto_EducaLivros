@@ -8,7 +8,7 @@ function goToPage(page){
 }
 
 bem_vindo.onclick = () => {
-    goToPage('src/html/login.html');
+    goToPage('index.html');
 }
 
 nossa_estrutura.onclick = () => {
