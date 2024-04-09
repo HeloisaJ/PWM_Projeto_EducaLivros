@@ -1,0 +1,15 @@
+#login_form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid;
+}
+
+#login_form input[type*=button]{
+    display: block;
+    margin-bottom: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-style: none;
+}

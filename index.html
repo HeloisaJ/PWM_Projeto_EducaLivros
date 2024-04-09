@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="/src/css/style.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/script.js" defer></script>
+        <script src="index.js" defer></script>
         <title>Escola EducaLivros</title>
     </head>
     <body>
@@ -12,34 +12,72 @@
             <h1 id="t">EducaLivros</h1>
             <nav class="MenuPrincipal">
                 <ul>
-                    <li><a href="/src/homepage.html" target="Pag_iframe">Bem-vindo</a></li>
-                    <li><a href="" target="Pag_iframe">Nossa Estrutura</a></li>
+                    <li><a id="bem_vindo">Bem-vindo</a></li>
+                    <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
                     <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
                         <div class="dropdown-content">
-                            <a href="" target="Pag_iframe">Fardamento</a> 
-                            <a href="" target="Pag_iframe">Material Didático</a> 
+                            <a>Fardamento</a> 
+                            <a>Material Didático</a> 
                         </div>
                     </li>
                     <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
                         <div class="dropdown-content">
-                            <a href="" target="Pag_iframe">Aulas Particulares</a> 
-                            <a href="" target="Pag_iframe">Cursos</a> 
-                            <a href="" target="Pag_iframe">Esportes</a>
+                            <a>Aulas Particulares</a> 
+                            <a>Cursos</a> 
+                            <a>Esportes</a>
                         </div>
                     </li>
                     <li class="dropdown"><a href="" draggable="false" class="dropbtn">Nossa Biblioteca</a>
                         <div class="dropdown-content">
-                            <a href="" target="Pag_iframe">Consulta ao acervo</a> 
-                            <a href="" target="Pag_iframe">Ebooks</a>
-                            <a href="" target="Pag_iframe">Empréstimos</a> 
+                            <a>Consulta ao acervo</a> 
+                            <a>Ebooks</a>
+                            <a>Empréstimos</a> 
                         </div>
                     </li>
-                    <li><a href="" target="Pag_iframe">Login Área Restrita</a></li>
+                    <li><a id="login">Login Área Restrita</a></li>
                 </ul>
             </nav>
         </header>
-        <div>
-            <iframe name="Pag_iframe" src="/src/homepage.html"></iframe>
+
+        <div id="homepage">
+            <h2><strong>A Escola que Prepara Para o Mundo</strong></h2>
+            <hr>
+            <p>A Escola EducaLivros é dedicada ao desenvolvimento integral de seus alunos, enfatizando a importância da leitura e do estudo em um mundo em constante transformação. Com um vasto acervo em nossa biblioteca, promovemos um ambiente de aprendizado que prepara os estudantes para os desafios futuros, valorizando a educação como chave para o sucesso pessoal e profissional.</p>
+            <div class="botao-container">
+                <a href="" class="botao">+ Sobre o EducaLivros</a>
+            </div>
+            
+            <h2><strong>Conheça Nossos Diferenciais</strong></h2>
+            <hr>
+            
+            <h2><strong>Segmentos</strong></h2>
+            <hr>
+            <div class="segmentos-container">
+                <div class="segmento">
+                    <img src="../Images/segmentos/ed_basica.webp" alt="Educação Infantil">
+                    <div class="descricao-segmento">
+                        <h3>Educação Infantil</h3>
+                    </div>
+                </div>
+                <div class="segmento">
+                    <img src="../Images/segmentos/ens_fund_I.webp" alt="Ensino Fundamental I">
+                    <div class="descricao-segmento">
+                        <h3>Ensino Fundamental I</h3>
+                    </div>
+                </div>
+                <div class="segmento">
+                    <img src="../Images/segmentos/ens_fund_II.webp" alt="Ensino Fundamental II">
+                    <div class="descricao-segmento">
+                        <h3>Ensino Fundamental II</h3>
+                    </div>
+                </div>
+                <div class="segmento">
+                    <img src="../Images/segmentos/ens_medio.webp" alt="Ensino Fundamental I">
+                    <div class="descricao-segmento">
+                        <h3>Ensino Médio</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
