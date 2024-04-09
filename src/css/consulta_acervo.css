@@ -4,6 +4,7 @@
     --cor-letras-Menu: white;
     --cor-border-top: maroon;
     --cor-header: maroon;
+    --footer-background: #0b0b0b;
 }
 
 /* TOP BAR */
@@ -27,34 +28,41 @@ header h1{
 
 
 /* SEATCH BAR */
+.search {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .search input[type=text] {
     width: 300px;
     height: 25px;
-    border-radius: 25px;
     border: none;
 }
 
-.search {
-    display: inline-block;
-    margin: 7px;
-}
 
 .search button {
     background-color: #0074D9;
     color: #f2f2f2;
-    padding: 5px 10px;
+    height: 26px;
+    width: 26px;
     margin-right: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 12px;
     border: none;
     cursor: pointer;
 }
 
+.search i{
+    position: relative;
+}
 
 /* FOOTER */
 
 footer {
-    background-color: maroon;
+    background-color: var(--footer-background);
     left: 0;
     padding-bottom: 30px;
     padding-top: 10px;
