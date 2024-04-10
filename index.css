@@ -101,24 +101,36 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.segmentos-container {
+
+.segmentos-container, .diferenciais-container {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
 }
-.segmento {
+.segmento, .diferencial {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px; 
     margin-bottom: 20px;
 }
-
+.diferencial img {
+    display: block;
+    margin: 0 0;
+    max-width: 125px;
+}
 .segmento img {
     display: block;
     margin: 0 auto;
     max-width: 250px;
+}
+
+.descricao-diferencial {
+    color: maroon;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
 }
 .descricao-segmento {
     background-color: maroon;
@@ -130,6 +142,7 @@ html, body {
     padding-bottom: 10px;
 
 }
-.descricao-segmento h3 {
+.descricao-segmento h3, .descricao-diferencial h3 {
     margin: 0;
 }
+
