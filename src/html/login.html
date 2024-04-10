@@ -8,6 +8,37 @@
         <title>Document</title>
     </head>
     <body>
+        <header>
+            <h1 id="t">EducaLivros</h1>
+            <nav class="MenuPrincipal">
+                <ul>
+                    <li><a id="bem_vindo">Bem-vindo</a></li>
+                    <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
+                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
+                        <div class="dropdown-content">
+                            <a>Fardamento</a> 
+                            <a>Material Didático</a> 
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
+                        <div class="dropdown-content">
+                            <a>Aulas Particulares</a> 
+                            <a>Cursos</a> 
+                            <a>Esportes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a id="nossa_biblioteca">Nossa Biblioteca</a>
+                        <div class="dropdown-content">
+                            <a id="consulta_acervo">Consulta ao acervo</a> 
+                            <a>Ebooks</a>
+                            <a>Empréstimos</a> 
+                        </div>
+                    </li>
+                    <li><a id="login">Login Área Restrita</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <div id="login_form">
             <form>
                 <label for="in_email">EMAIL:</label><br>
@@ -16,10 +47,16 @@
                 <input id="in_password" type="password">
             </form>
 
-            <p>Efetuar login como:</p>
-            <input id="bt_aluno" type="button" value="ALUNO">
-            <input id="bt_prof" type="button" value="PROFESSOR">
-            <input id="bt_func" type="button" value="FUNCIONÁRIO">
+            <div id="error">
+                <p>Por favor verifique se as entradas de email e senha estão preenchidas corretamente.</p>
+            </div>
+
+            <div id="login_part">
+                <p>Efetuar login como:</p>
+                <input id="bt_aluno" type="button" value="ALUNO">
+                <input id="bt_prof" type="button" value="PROFESSOR">
+                <input id="bt_func" type="button" value="FUNCIONÁRIO">
+            </div>
         </div>
     </body>
 </html>
