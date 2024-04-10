@@ -1,5 +1,10 @@
 var is_logged = ''
 
+const bem_vindo = document.getElementById('bem_vindo')
+const nossa_estrutura = document.getElementById('nossa_estrutura')
+const consulta_acervo = document.getElementById('consulta_acervo')
+const login_bt = document.getElementById('login')
+
 const in_email = document.getElementById('in_email')
 const in_password = document.getElementById('in_password')
 
@@ -8,6 +13,26 @@ const error = document.getElementById('error')
 const bt_aluno = document.getElementById('bt_aluno')
 const bt_prof = document.getElementById('bt_prof')
 const bt_func = document.getElementById('bt_func')
+
+function goToPage(page){
+    window.location.href = page;
+}
+
+bem_vindo.onclick = () => {
+    goToPage('../../index.html');
+}
+
+nossa_estrutura.onclick = () => {
+    goToPage('nossa_estrutura.html')
+}
+
+consulta_acervo.onclick = () => {
+    goToPage('consulta_acervo.html')
+}
+
+login_bt.onclick = () => {
+    goToPage('login.html')
+}
 
 function make_login(tipo, page){
     var email = in_email.value
