@@ -103,24 +103,36 @@ html, body {
     justify-content: center;
     align-items: center;
 }
-.segmentos-container {
+
+.segmentos-container, .diferenciais-container {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
 }
-.segmento {
+.segmento, .diferencial {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px; 
     margin-bottom: 20px;
 }
-
+.diferencial img {
+    display: block;
+    margin: 0 0;
+    max-width: 125px;
+}
 .segmento img {
     display: block;
     margin: 0 auto;
     max-width: 250px;
+}
+
+.descricao-diferencial {
+    color: maroon;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
 }
 .descricao-segmento {
     background-color: maroon;
@@ -132,87 +144,20 @@ html, body {
     padding-bottom: 10px;
 
 }
-.descricao-segmento h3 {
+.descricao-segmento h3, .descricao-diferencial h3 {
     margin: 0;
 }
 
-/* FOOTER */
-
-footer {
-    background-color: var(--footer-background);
-    padding-bottom: 30px;
-    padding-top: 10px;
-    width: 100%;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
+.depoimentos-container {
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
 }
 
-.container {
+.depoimentos-carousel {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    animation: slide 10s infinite linear;
 }
 
-.container>div {
-    flex: 1;
-    margin: 0 0px;
-}
 
-.links ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.links ul li {
-    margin-bottom: 10px;
-}
-
-.links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contato p {
-    margin: 5px 0;
-    text-align: center;
-}
-
-.contato a {
-    color: #fff;
-}
-
-.social ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.social ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.social a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.social i {
-    text-align: center;
-    font-size: 24px;
-}
-
-.legal {
-    margin-top: 20px;
-}
-
-.legal p {
-    color: #fff;
-    text-align: center;
-}
-
-.legal a {
-    color: #fff;
-    text-decoration: none;
-}
 
