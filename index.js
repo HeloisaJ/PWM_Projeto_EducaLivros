@@ -22,3 +22,4 @@ consulta_acervo.onclick = () => {
 login_bt.onclick = () => {
     goToPage('src/html/login.html')
 }
+

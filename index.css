@@ -146,3 +146,15 @@ html, body {
     margin: 0;
 }
 
+.depoimentos-container {
+    overflow: hidden;
+    max-width: 80%;
+    margin: auto;
+}
+
+.depoimentos-carousel {
+    display: flex;
+    animation: slide 10s infinite linear;
+}
+
+
