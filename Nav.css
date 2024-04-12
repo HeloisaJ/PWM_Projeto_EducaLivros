@@ -1,0 +1,79 @@
+:root{
+    --cor-Barra-Nav : rgb(40, 37, 37);
+    --cor-hover: rgb(234, 232, 232);
+    --cor-letras-Menu: white;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
+}
+header{
+    border-top: 1rem solid var(--cor-border-top);
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--cor-header);
+}
+header h1{
+    text-align: center;
+    color: white;
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* Barra de Navegação */
+
+.MenuPrincipal ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: var(--cor-Barra-Nav);
+}
+
+.MenuPrincipal ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.MenuPrincipal ul li a, .MenuPrincipal ul li a.dropbtn{
+    color: var(--cor-letras-Menu);
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+.MenuPrincipal ul li a{
+    padding: 12px;
+}
+
+.MenuPrincipal ul li a.dropbtn{
+    padding: auto;
+}
+
+.MenuPrincipal .dropdown-content a{
+    display: block;
+    max-width: 180px;
+}
+
+.MenuPrincipal .dropdown-content{
+    display: none;
+    position: absolute;
+    color: var(--cor-letras-Menu);
+    background-color: var(--cor-Barra-Nav);
+    width: 180px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.268);
+    z-index: 1;
+}
+
+.MenuPrincipal ul .dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.MenuPrincipal ul li a:hover, .MenuPrincipal .dropdown:hover .dropbtn, .MenuPrincipal .dropdown-content a:hover{
+    background-color: var(--cor-hover);
+    color: black;
+}

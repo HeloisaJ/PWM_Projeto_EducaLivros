@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../../Nav.css" rel="stylesheet">
+        <link href="../css/fardamento.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../js/Nav.js" defer></script>
+        <script src="../js/fardamento.js" defer></script>
+        <title>Escola EducaLivros</title>
+    </head>
+    <body>
+        <header>
+            <form class="search">
+                <input type="text" placeholder="Search Books" name="search">
+                <button>
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </form>
+            <nav class="MenuPrincipal">
+                <ul>
+                    <li><a id="bem_vindo">Bem-vindo</a></li>
+                    <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
+                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
+                        <div class="dropdown-content">
+                            <a id="fardamento">Fardamento</a> 
+                            <a>Material Didático</a> 
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
+                        <div class="dropdown-content">
+                            <a>Aulas Particulares</a> 
+                            <a>Cursos</a> 
+                            <a>Esportes</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a id="nossa_biblioteca">Nossa Biblioteca</a>
+                        <div class="dropdown-content">
+                            <a id="consulta_acervo">Consulta ao acervo</a> 
+                            <a>Ebooks</a>
+                            <a>Empréstimos</a> 
+                        </div>
+                    </li>
+                    <li><a id="login">Login Área Restrita</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="listaDeProdutos">
+            <section class="Produtos">
+                <figure>
+                    <img>
+                    <figcaption></figcaption>
+                </figure>
+                <h3>Camiseta</h3>
+                <aside class="MaisInfo">
+                    <h2>Camiseta</h2>
+                    <hr/>
+                    <figure>
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <h3>Descrição</h3>
+                    <p>Camiseta de algodão com o logo da EducaLivros</p>
+                    <h2>R$ 50,00</h2>
+                    <form>
+                        <fieldset>
+                            <input type="radio" name="ensino" value="ensino infantil"> <label>Ensino Infantil</label>
+                            <input type="radio" name="ensino" value="ensino fundamental"> <label>Ensino Fundamental</label> 
+                            <input type="radio" name="ensino" value="ensino medio"> <label>Ensino Médio</label>
+                        </fieldset> 
+                        <br/>
+                        <fieldset>
+                            <input type="radio" name="tamanho" value="pp"> <label>PP</label>
+                            <input type="radio" name="tamanho" value="p"> <label>P</label>
+                            <input type="radio" name="tamanho" value="m"> <label>M</label>
+                            <input type="radio" name="tamanho" value="g"> <label>G</label>
+                            <input type="radio" name="tamanho" value="gg"> <label>GG</label>
+                        </fieldset>
+                        <br/>
+                        <fieldset>
+                            <input type="radio" name="tipo" value="reta"> <label>Reta</label>
+                            <input type="radio" name="tipo" value="baby"> <label>Baby Look</label>
+                        </fieldset>
+                        <br/>
+                        <input type="button" name="botãoCompra" value="Comprar">
+                    </form>
+                </aside>
+            </section>
+            <section class="Produtos">
+                <figure>
+                    <img>
+                    <figcaption></figcaption>
+                </figure>
+                <h3>Short</h3>
+                <aside class="MaisInfo">
+                    <h2>Short</h2>
+                    <hr/>
+                    <figure>
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <h3>Descrição</h3>
+                    <p>Short de malha da EducaLivros</p>
+                    <h2>R$ 30,00</h2>
+                    <form>
+                        <fieldset>
+                            <input type="radio" name="ensino" value="ensino infantil"> <label>Ensino Infantil</label>
+                            <input type="radio" name="ensino" value="ensino fundamental"> <label>Ensino Fundamental</label> 
+                            <input type="radio" name="ensino" value="ensino medio"> <label>Ensino Médio</label>
+                        </fieldset> 
+                        <br/>
+                        <fieldset>
+                            <input type="radio" name="tamanho" value="pp"> <label>PP</label>
+                            <input type="radio" name="tamanho" value="p"> <label>P</label>
+                            <input type="radio" name="tamanho" value="m"> <label>M</label>
+                            <input type="radio" name="tamanho" value="g"> <label>G</label>
+                            <input type="radio" name="tamanho" value="gg"> <label>GG</label>
+                        </fieldset>
+                        <br/>
+                        <fieldset>
+                            <input type="radio" name="genero" value="masculino"> <label>Masculino</label>
+                            <input type="radio" name="genero" value="feminino"> <label>Feminino</label>
+                        </fieldset>
+                        <br/>
+                        <input type="button" name="botãoCompra" value="Comprar">
+                    </form>
+                </aside>
+            </section>
+            <section class="Produtos">
+                <figure>
+                    <img>
+                    <figcaption></figcaption>
+                </figure>
+                <h3>Boné</h3>
+                <aside class="MaisInfo">
+                    <h2>Boné</h2>
+                    <hr/>
+                    <figure>
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <h3>Descrição</h3>
+                    <p>Boné da EducaLivros</p>
+                    <h2>R$ 30,00</h2>
+                    <form>
+                        <fieldset>
+                            <input type="radio" name="cor" value="preto"> <label>Preto</label>
+                            <input type="radio" name="cor" value="vermelho"> <label>Vermelho</label> 
+                        </fieldset> 
+                        <br/>
+                        <input type="button" name="botãoCompra" value="Comprar">
+                    </form>
+                </aside>
+            </section>
+        </main>
+    </body>
+</html>

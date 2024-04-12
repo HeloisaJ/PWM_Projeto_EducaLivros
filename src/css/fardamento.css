@@ -1,0 +1,26 @@
+#listaDeProdutos{
+    text-align: center;
+}
+
+.Produtos{
+    border-style: solid;
+    border-color:rgb(214, 214, 220);
+    border-radius: 1em;
+    border-width: 0.1em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 0.5em;
+    padding: 9em;
+}
+
+.Produtos:hover{
+    border-color: maroon;
+}
+
+.Produtos figure{
+    display: block;
+}
+
+.MaisInfo{
+    display: none;
+}
