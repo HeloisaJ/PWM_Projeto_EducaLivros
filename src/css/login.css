@@ -33,17 +33,7 @@ html, body {
     margin: -0.9% auto;
     text-align: center;
     /*border: 1px solid;*/
-}
-
-#login_form #error{
-    color: white;
-    background-color: rgba(128, 0, 0, 0.8);
-    width: 25%;
-    font-size: 100%;
-    font-weight: bold;
-    margin: 0 auto;
-    display: none;
-}   
+}  
 
 #login_form #login_part p{
     width: 25%;

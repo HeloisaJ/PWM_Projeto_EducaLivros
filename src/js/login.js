@@ -42,11 +42,10 @@ function make_login(tipo, page){
     {
         is_logged = tipo
         window.location.href = page
-        error.style.display = 'none'
     }
     else
     {
-        error.style.display = 'block'
+        alert('Por favor verifique se o email e a senha foram digitados corretamente.')
     }
 }
 
