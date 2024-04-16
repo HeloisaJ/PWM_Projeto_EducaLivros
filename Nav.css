@@ -5,21 +5,20 @@
     --cor-border-top: maroon;
     --cor-header: maroon;
 }
+
 header{
     border-top: 1rem solid var(--cor-border-top);
     width: 100%;
     margin: 0 auto;
     background-color: var(--cor-header);
 }
-header h1{
-    text-align: center;
-    color: white;
-}
+
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
+    font-size: medium;
 }
 
 
@@ -35,10 +34,12 @@ html, body {
 .MenuPrincipal ul li{
     display: inline-block;
     position: relative;
+    color: var(--cor-letras-Menu);
 }
 
 .MenuPrincipal ul li a, .MenuPrincipal ul li a.dropbtn{
     color: var(--cor-letras-Menu);
+    background-color: var(--cor-Barra-Nav);
     text-decoration: none;
     display: inline-block;
     font-size: large;
@@ -47,7 +48,7 @@ html, body {
 }
 
 .MenuPrincipal ul li a{
-    padding: 12px;
+    padding: 10px;
 }
 
 .MenuPrincipal ul li a.dropbtn{
@@ -73,7 +74,7 @@ html, body {
     display: block;
 }
 
-.MenuPrincipal ul li a:hover, .MenuPrincipal .dropdown:hover .dropbtn, .MenuPrincipal .dropdown-content a:hover{
+.MenuPrincipal ul li:hover, .MenuPrincipal ul li a:hover, .MenuPrincipal .dropdown:hover .dropbtn, .MenuPrincipal .dropdown-content a:hover{
     background-color: var(--cor-hover);
     color: black;
 }
