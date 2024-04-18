@@ -14,78 +14,143 @@
     <script src="../js/consulta_acervo.js" defer></script>
     <title>Acervo</title>
 </head>
+
 <body>
-    <header>
-        <img src="/Images/EducaLivros.png" alt="Logo">
-        <!-- search bar right align -->
-        <div class="search">
-            <form>
-                <input type="text" placeholder="Search Books" name="search">
-                <button>
-                    <i class="fa-solid fa-search"></i>
-                </button>
-            </form>
+    <div class="main">
+        <div class="top-bar">
+            <header>
+                <!-- search bar right align -->
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Search Books" name="search">
+                        <button>
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <nav class="MenuPrincipal">
+                    <ul>
+                        <li><a id="bem_vindo">Bem-vindo</a></li>
+                        <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
+                        <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
+                            <div class="dropdown-content">
+                                <a id="fardamento">Fardamento</a>
+                                <a id="material">Material Didático</a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
+                            <div class="dropdown-content">
+                                <a id="aulas_particulares">Aulas Particulares</a>
+                                <a id="cursos">Cursos</a>
+                                <a id="esportes">Esportes</a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a a href="" draggable="false" class="dropbtn" id="nossa_biblioteca">Nossa
+                                Biblioteca</a>
+                            <div class="dropdown-content">
+                                <a id="consulta_acervo">Consulta ao acervo</a>
+                                <a id="ebooks">Ebooks</a>
+                                <a id="emprestimos">Empréstimos</a>
+                            </div>
+                        </li>
+                        <li><a id="login">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-        <nav class="MenuPrincipal">
-            <ul>
-                <li><a id="bem_vindo">Bem-vindo</a></li>
-                <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
-                <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
-                    <div class="dropdown-content">
-                        <a id="fardamento">Fardamento</a> 
-                        <a id="material">Material Didático</a> 
+        <div class="middle-content">
+            <div class="book-container">
+                <h1>Lista de Livros</h1>
+                <div class="book">
+                    <div class="icon">
+                        <img src="/Images/consulta_acervo/1984.jpeg" alt="">
                     </div>
-                </li>
-                <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
-                    <div class="dropdown-content">
-                        <a id="aulas_particulares">Aulas Particulares</a> 
-                        <a id="cursos">Cursos</a> 
-                        <a id="esportes">Esportes</a>
+                    <div class="content">
+                        <h2>1984</h2>
+                        <p>
+                            Winston, herói de 1984 , último romance de George Orwell, vive aprisionado na engrenagem totalitária de uma sociedade completamente dominada pelo Estado, onde tudo é feito coletivamente, mas cada qual vive sozinho. Ninguém escapa à vigilância do Grande Irmão, a mais famosa personificação literária de um poder cínico e cruel ao infinito, além de vazio de sentido histórico. De fato, a ideologia do Partido dominante em Oceânia não visa nada de coisa alguma para ninguém, no presente ou no futuro. O'Brien, hierarca do Partido, é quem explica a Winston que "só nos interessa o poder em si. Nem riqueza, nem luxo, nem vida longa, nem felicidade: só o poder pelo poder, poder puro".
+                            Quando foi publicada em 1949, essa assustadora distopia datada de forma arbitrária num futuro perigosamente próximo logo experimentaria um imenso sucesso de público. Seus principais ingredientes - um homem sozinho desafiando uma tremenda ditadura; sexo furtivo e libertador; horrores letais - atraíram leitores de todas as idades, à esquerda e à direita do espectro político, com maior ou menor grau de instrução. À parte isso, a escrita translúcida de George Orwell, os personagens fortes, traçados a carvão por um vigoroso desenhista de personalidades, a trama seca e crua e o tom de sátira sombria garantiram a entrada precoce de 1984 no restrito panteão dos grandes clássicos modernos.
+                        </p>
+                        <button>Fazer emprestimo</button>
                     </div>
-                </li>
-                <li class="dropdown"><a a href="" draggable="false" class="dropbtn" id="nossa_biblioteca">Nossa Biblioteca</a>
-                    <div class="dropdown-content">
-                        <a id="consulta_acervo">Consulta ao acervo</a> 
-                        <a id="ebooks">Ebooks</a>
-                        <a id="emprestimos">Empréstimos</a> 
+                </div>
+                <div class="book">
+                    <div class="icon">
+                        <img src="/Images/consulta_acervo/theOldMan.jpeg" alt="">
                     </div>
-                </li>
-                <li><a id="login">Login Área Restrita</a></li>
-            </ul>
-        </nav>
-    </header>
-    <footer>
-        <div class="container">
-            <div class="links">
-                <h3>Links Úteis</h3>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre nós</a></li>
-                </ul>
-            </div>
-            <div class="contato">
-                <h3>Contato</h3>
-                <p>R. do Príncipe, 526 - Boa Vista, Recife - PE - 50050-900</p>
-                <p><strong>Email:</strong> <a
-                        href="mailto:educalivrosbiblioteca@gmail.com">educalivrosbiblioteca@gmail.com</a></p>
-                <!--Protocolo Mailto-->
-                <p><strong>Telefone:</strong> (81) 91234-5678</p>
-            </div>
-            <div class="social">
-                <h3>Siga-nos</h3>
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
+                    <div class="content">
+                        <h2>O velho e o mar</h2>
+                        <p>
+                            Depois de anos na profissão, havia 84 dias que o velho pescador Santiago não apanhava um único peixe. Por isso já diziam se tratar de um salão, ou seja, um azarento da pior espécie. Mas ele possui coragem, acredita em si mesmo, e parte sozinho para alto-mar, munido da certeza de que, desta vez, será bem-sucedido no seu trabalho. Esta é a história de um homem que convive com a solidão, com seus sonhos e pensamentos, sua luta pela sobrevivência e a inabalável confiança na vida. Com um enredo tenso que prende o leitor na ponta da linha, Hemingway escreveu uma das mais belas obras da literatura contemporânea. Uma história dotada de profunda mensagem de fé no homem e em sua capacidade de superar as limitações a que a vida o submete.
+
+                            Com a linguagem simples mas poderosa das fábulas, Hemingway trata de temas universais e atemporais como a perseverança em meio às adversidades e as lições que podemos tirar da derrota neste magnífico clássico do século XX.
+                            
+                            Escrito em 1952, O velho e o mar venceu o Prêmio Pulitzer de Ficção e foi fator decisivo para a premiação de Hemingway com o Nobel de Literatura em 1954.
+                            
+                            Ao lado de contemporâneos como F. Scott Fitzgerald e John Steinbeck, Ernest Hemingway foi um dos escritores mais importantes da chamada “Geração Perdida” e inspirou as gerações subsequentes de escritores americanos.
+                        </p>
+                        <button>Fazer emprestimo</button>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="icon">
+                        <img src="/Images/consulta_acervo/crimeEcastigo.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Crime e Castigo</h2>
+                        <p>
+                            Publicado em 1866, Crime e castigo é a obra mais célebre de Fiódor Dostoiévski. Neste livro, Raskólnikov, um jovem estudante, pobre e desesperado, perambula pelas ruas de São Petersburgo até cometer um crime que tentará justificar por uma teoria: grandes homens, como César ou Napoleão, foram assassinos absolvidos pela História. Este ato desencadeia uma narrativa labiríntica que arrasta o leitor por becos, tabernas e pequenos cômodos, povoados de personagens que lutam para preservar sua dignidade contra as várias formas da tirania. Esta é a primeira tradução direta da obra lançada no Brasil, e recebeu em 2002 o Prêmio Paulo Rónai de Tradução da Fundação Biblioteca Nacional.
+                        </p>
+                        <button>Fazer emprestimo</button>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="icon">
+                        <img src="/Images/consulta_acervo/gentePobre.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Gente Pobre</h2>
+                        <p>
+                            Romance de estreia de Dostoiévski, Gente pobre, publicado em 1846, foi imediatamente aclamado pelo público, fazendo de seu autor, praticamente da noite para o dia, um escritor consagrado. Por meio da troca de cartas entre um funcionário menor de uma repartição pública de Petersburgo e sua vizinha, uma jovem órfã injustiçada, o autor de Crime e castigo explora a fundo as variações de tom e tratamento, de saltos e encadeamentos na ação, para criar um texto comovente e, no dizer de Boris Schnaiderman, "marcado pela consciência da injustiça social".
+                        </p>
+                        <button>Fazer emprestimo</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="legal">
-            <p>&copy; 2024 EducaLivros. Todos os direitos reservados.</p>
-            <a href="politicaDePrivacidade.html">Política de
-                Privacidade</a> | <a href="termosDeserviço.html">Termos de Serviço</a>
-        </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <div class="links">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <p>R. do Príncipe, 526 - Boa Vista, Recife - PE - 50050-900</p>
+                    <p><strong>Email:</strong> <a
+                            href="mailto:educalivrosbiblioteca@gmail.com">educalivrosbiblioteca@gmail.com</a></p>
+                    <!--Protocolo Mailto-->
+                    <p><strong>Telefone:</strong> (81) 91234-5678</p>
+                </div>
+                <div class="social">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal">
+                <p>&copy; 2024 EducaLivros. Todos os direitos reservados.</p>
+                <a href="politicaDePrivacidade.html">Política de
+                    Privacidade</a> | <a href="termosDeserviço.html">Termos de Serviço</a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
