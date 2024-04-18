@@ -1,0 +1,31 @@
+header h1{
+    text-align: center;
+    color: white;
+}
+
+#aluno_nav {
+    background-color: rgb(40, 37, 37);
+    width: 10%;
+    position: fixed;
+}
+
+#aluno_nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+#aluno_nav ul li{
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 0;
+    text-align: center;
+    /*border: 1px solid;*/
+}
+
+#aluno_nav ul #aulas{
+    background-color: white;
+    color: rgb(40, 37, 37);
+}
