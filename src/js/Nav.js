@@ -45,7 +45,25 @@ consulta_acervo.onclick = () => {
 }
 
 login_bt.onclick = () => {
-    goToPage('login.html')
+    if(is_logged)
+    {
+        if(is_logged === 'aluno')
+        {
+            goToPage('AR_aluno.html');
+        }
+        else if(is_logged === 'prof')
+        {
+            goToPage('AR_professor.html');
+        }
+        else
+        {
+            goToPage('AR_funcionario.html');
+        }
+    }
+    else
+    {
+        goToPage('login.html')
+    }
 }
 
 fardamento.onclick = () => {

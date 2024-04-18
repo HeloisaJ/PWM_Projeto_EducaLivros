@@ -1,12 +1,8 @@
-const black = 'rgb(40, 37, 37)'
+const black = 'rgb(40, 37, 37)';
 
-const list_items = document.getElementById('aluno_nav').getElementsByTagName('li')
+const list_items = document.getElementById('aluno').getElementsByTagName('li');
 
-const aulas = document.getElementById('aulas')
-const notas = document.getElementById('notas')
-const aluno_emprestimos = document.getElementById('al_emprestimos')
-
-let select = aulas
+let select = list_items[0]
 
 for(let i = 0; i < list_items.length; i++)
 {
@@ -22,31 +18,13 @@ for(let i = 0; i < list_items.length; i++)
             list_items[i].style.color = 'white';
         }
     })
-}
 
-aulas.onclick = () => {
-    if(select != aulas)
-    {
-        select.style.backgroundColor = black;
-        select.style.color = 'white';
-        select = aulas;
-    }
-}
-
-notas.onclick = () => {
-    if(select != notas)
-    {
-        select.style.backgroundColor = black;
-        select.style.color = 'white';
-        select = notas;
-    }
-}
-
-aluno_emprestimos.onclick = () => {
-    if(select != aluno_emprestimos)
-    {
-        select.style.backgroundColor = black;
-        select.style.color = 'white';
-        select = aluno_emprestimos;
-    }
+    list_items[i].addEventListener('mousedown', function(e){
+        if(select != list_items[i])
+        {
+            select.style.backgroundColor = black;
+            select.style.color = 'white';
+            select = list_items[i];
+        }
+    })
 }

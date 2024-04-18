@@ -3,29 +3,39 @@ header h1{
     color: white;
 }
 
-#aluno_nav {
+#aluno {
+    display: flex;
+}
+
+#aluno nav{
+    position: relative;
+    bottom: 16px;
     background-color: rgb(40, 37, 37);
-    width: 10%;
-    position: fixed;
 }
 
-#aluno_nav ul{
+#aluno nav ul{
     list-style: none;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
-#aluno_nav ul li{
+#aluno nav ul li{
+    background-color: rgb(40, 37, 37);
     color: white;
-    width: 100%;
-    cursor: pointer;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 0;
     text-align: center;
-    /*border: 1px solid;*/
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-#aluno_nav ul #aulas{
+#aluno nav ul #quadro{
     background-color: white;
     color: rgb(40, 37, 37);
+}
+
+#aluno iframe{
+    border-style: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    bottom: 16px;
 }
