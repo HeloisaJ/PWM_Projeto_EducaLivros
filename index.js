@@ -11,6 +11,23 @@ const cursos = document.getElementById('cursos')
 const aulas_particulares = document.getElementById('aulas_particulares')
 const emprestimos = document.getElementById('emprestimos')
 
+var is_logged = window.localStorage.getItem('login')
+if(is_logged)
+{
+    if(is_logged === 'aluno')
+    {
+        login_bt.innerHTML = 'Login: aluno'
+    }
+    else if(is_logged === 'prof')
+    {
+        login_bt.innerHTML = 'Login: professor'
+    }
+    else
+    {
+        login_bt.innerHTML = 'Login: funcionário'
+    }
+}
+
 function goToPage(page){
     window.location.href = page;
 }

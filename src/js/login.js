@@ -1,4 +1,20 @@
-var is_logged = ''
+var is_logged = window.localStorage.getItem('login')
+
+if(is_logged)
+{
+    if(is_logged === 'aluno')
+    {
+        window.location.href = 'AR_aluno.html'
+    }
+    else if(is_logged === 'prof')
+    {
+        window.location.href = 'AR_professor.html'
+    }
+    else
+    {
+        window.location.href = 'AR_funcionario.html'
+    }
+}
 
 const in_email = document.getElementById('in_email')
 const in_password = document.getElementById('in_password')
@@ -13,7 +29,7 @@ function make_login(tipo, page){
 
     if(email && password)
     {
-        is_logged = tipo
+        window.localStorage.setItem('login', tipo)
         window.location.href = page
     }
     else
@@ -31,20 +47,4 @@ bt_prof.onclick = () => {
 }
 bt_func.onclick = () => {
     make_login('func', 'AR_funcionario.html')
-}
-
-if(is_logged)
-{
-    if(is_logged === 'aluno')
-    {
-        window.location.href = 'AR_aluno.html'
-    }
-    else if(is_logged === 'prof')
-    {
-        window.location.href = 'AR_professor.html'
-    }
-    else
-    {
-        window.location.href = 'AR_funcionario.html'
-    }
 }
