@@ -1,21 +1,3 @@
-var is_logged = window.localStorage.getItem('login')
-
-if(is_logged)
-{
-    if(is_logged === 'aluno')
-    {
-        window.location.href = 'AR_aluno.html'
-    }
-    else if(is_logged === 'prof')
-    {
-        window.location.href = 'AR_professor.html'
-    }
-    else
-    {
-        window.location.href = 'AR_funcionario.html'
-    }
-}
-
 const in_email = document.getElementById('in_email')
 const in_password = document.getElementById('in_password')
 
