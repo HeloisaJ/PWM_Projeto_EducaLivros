@@ -23,8 +23,6 @@ html, body {
 }
 .middle-content{
     padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 /* TOP BAR */
@@ -81,13 +79,13 @@ form{
 /* Book */
 
 .book-container{
-    width: 96%;
+    width: 50%;
     margin: 20px auto;
 }
 
 .book{
     min-height: 300px;
-    width: 48%;
+    width: 100%;
     float: left;
     background: whitesmoke;
     margin: 5px;
@@ -109,6 +107,7 @@ form{
 }
 
 .icon img{
+    border-radius: 6px;
     height: 200px;
     margin-right: 20px;
 }

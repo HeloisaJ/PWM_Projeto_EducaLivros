@@ -1,5 +1,5 @@
-:root{
-    --cor-Barra-Nav : rgb(40, 37, 37);
+:root {
+    --cor-Barra-Nav: rgb(40, 37, 37);
     --cor-hover: rgb(234, 232, 232);
     --cor-letras-Menu: white;
     --cor-border-top: maroon;
@@ -9,28 +9,216 @@
 
 /* Gereal */
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 100%;
 }
 
-.top-bar{
+.top-bar {
     margin-bottom: 100px;
 }
-.middle-content{
+
+.middle-content {
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
 }
 
+/* Left Menu */
+
+.left-menu {
+    margin: 20px auto;
+    border-radius: 6px;
+    margin-left: 50px;
+    text-align: center;
+    background-color: orange;
+    width: 300px;
+    position: fixed;
+}
+
+.left-menu h1 {
+    font-size: 20px;
+}
+
+.left-menu nav{
+    float: none; 
+    clear: both;
+    width: 80%; 
+    margin: 10% auto;
+    background: orange;
+  }
+  
+.left-menu nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.left-menu nav li{
+    display: flex;
+    float: none; 
+    width: 100%;
+  }
+
+.left-menu nav li a{
+    display: block; 
+    width: 100%; 
+    padding: 20px; 
+    border-left: 5px solid; 
+    position: relative; 
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+  }
+
+.left-menu nav li a:hover {
+    border-bottom: 0px;
+    color: #fff;
+}
+
+.left-menu nav li:first-child a {
+    border-left: 10px solid #3498db;
+}
+
+.left-menu nav li:nth-child(2) a {
+    border-left: 10px solid #ffd071;
+}
+/i>
+.left-menu nav li:nth-child(3) a {
+    border-left: 10px solid #f0776c;
+}
+
+.left-menu nav li:nth-child(4) a {
+    border-left: 10px solid #6cf094;
+}
+
+.left-menu  nav li:last-child a {
+    border-left: 10px solid #1abc9c;
+}
+
+.left-menu nav li a:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+
+.left-menu  nav li a:hover:after {
+    width: 100%;
+}
+
+.left-menu  nav li:first-child a:after {
+    background: #3498db;
+}
+
+.left-menu  nav li:nth-child(2) a:after {
+    background: #ffd071;
+}
+
+.left-menu  nav li:nth-child(3) a:after {
+    background: #f0776c;
+}
+
+.left-menu  nav li:nth-child(4) a:after {
+    background: #6cf094;
+}
+
+.left-menu nav li:last-child a:after {
+    background: #1abc9c;
+}
+
+
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+}
+
+/* Book */
+
+.book-container {
+    background-color: orange;
+    border-radius: 6px;
+    width: 50%;
+    margin: 20px auto;
+    display: grid;
+}
+
+.book {
+    width: 80%;
+    max-height: 160px;
+    min-width: 300px;
+    border-radius: 6px;
+    float: left;
+    background: whitesmoke;
+    margin: 0 auto;    
+    padding-bottom: 10px;
+}
+
+.book-container h1 {
+    text-align: center;
+}
+
+.book button {
+    background: #1abc9c;
+    border-radius: 6px;
+    padding: 6px 6px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+.icon {
+    float: left;
+    line-height: 120px;
+}
+
+.icon img {
+    height: 150px;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
 /* TOP BAR */
 
-header{
+header {
     /*border-top: 1rem solid var(--cor-border-top);*/
     text-align: center;
     color: var(--cor-letras-Menu);
@@ -40,13 +228,13 @@ header{
     width: 100%;
 }
 
-header img{
+header img {
     float: left;
     height: 200px;
     top: -50px;
 }
 
-form{
+form {
     margin-top: 25px;
 }
 
@@ -130,4 +318,3 @@ footer {
     color: #fff;
     text-decoration: none;
 }
-
