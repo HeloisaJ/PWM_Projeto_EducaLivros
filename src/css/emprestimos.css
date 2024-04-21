@@ -1,0 +1,134 @@
+:root{
+    --cor-Barra-Nav : rgb(40, 37, 37);
+    --cor-hover: rgb(234, 232, 232);
+    --cor-letras-Menu: white;
+    --cor-border-top: maroon;
+    --cor-header: maroon;
+    --footer-background: #0b0b0b;
+}
+
+
+/* Gereal */
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100%;
+}
+
+.top-bar{
+    margin-bottom: 100px;
+}
+.middle-content{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP BAR */
+
+header{
+    /*border-top: 1rem solid var(--cor-border-top);*/
+    text-align: center;
+    color: var(--cor-letras-Menu);
+    background-color: var(--cor-header);
+    padding-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+header img{
+    float: left;
+    height: 200px;
+    top: -50px;
+}
+
+form{
+    margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    background-color: var(--footer-background);
+    padding-bottom: 30px;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    clear: both;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    flex: 1;
+    margin: 0 0px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contato p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.contato a {
+    color: #fff;
+}
+
+.social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social i {
+    text-align: center;
+    font-size: 24px;
+}
+
+.legal {
+    margin-top: 20px;
+}
+
+.legal p {
+    color: #fff;
+    text-align: center;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+}
+
