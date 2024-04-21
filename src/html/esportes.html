@@ -4,10 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../js/Nav.js" defer></script>
-        <title>Document</title>
+        <link href="../../Nav.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/esportes.css">
+        <title>Esportes</title>
+
+        <link rel="stylesheet" href="/assets/fontawesome/css/brands.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/solid.css">
+        <link rel="shortcut icon" href="/Images/EducaLivros.png">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Esportes, EducaLivros, Escola, Natação, Basquete, Badminton, Futebol, Vôlei">
+        <meta name="description" content="Página de esportes da escola EducaLivros">
     </head>
     <body>
         <header>
+            <figure>
+                <img src="/Images/EducaLivros.png" width="200px" height="200px" alt="Logo">
+            </figure>
             <h1 id="t">EducaLivros</h1>
             <nav class="MenuPrincipal">
                 <ul>
@@ -38,5 +53,40 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <figure>
+                <img src="../../Images/esportes/Esportes.jpg" width="500px" height="500px"></img>
+            </figure>
+            <section>
+                <p>
+                    A EducaLivros conta com diversas aulas de esportes para os seus alunos. Em que nossos
+                    atletas já ganharam diversos campeonatos estaduais e até nacionais. Increva-se e venha
+                    ser um dos nossos atletas.
+                </p>
+                <form>
+                    <fieldset>
+                        <legend>Escolha um esporte</legend>
+                        <input list="esporte">
+                        <datalist id="esporte">
+                            <option value="Basquete">
+                            <option value="Natação">
+                            <option value="Futebol">
+                            <option value="Vôlei">
+                            <option value="Badminton">
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Selecione o horário</legend>
+                        <input type="radio" name="horarios" value="p"> <label>Terça e Quinta (14:00 - 16:00)</label> </br>
+                        <input type="radio" name="horarios" value="p"> <label>Segunda e Quarta (15:00 - 17:00)</label> </br>
+                        <input type="radio" name="horarios" value="m"> <label>Segunda e Quarta (18:00 - 20:00)</label> </br>
+                        <input type="radio" name="horarios" value="g"> <label>Terça e Quinta (18:00 - 20:00)</label> </br>
+                    </fieldset>
+                    <p>Valor da mensalidade por esporte: </p>
+                    <h2>R$ 100,00</h2>
+                    <input type="submit" name="botao_envio" value="Inscreva-se">
+                </form>
+            </section>
+        </main>
     </body>
 </html>
