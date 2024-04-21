@@ -1,0 +1,25 @@
+header h1{
+    text-align: center;
+    color: white;
+}
+
+header img{
+    float: left;
+    height: 200px;
+    position: absolute;
+    top: -50px;
+}
+
+main figure{
+    display: block;
+    float: left;
+}
+
+section{
+    display: block;
+    font-size: large;
+}
+
+main input[type="radio"]{
+    margin-bottom: 15px;
+}
