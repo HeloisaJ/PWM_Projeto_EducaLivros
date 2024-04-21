@@ -57,8 +57,8 @@ header h1{
     align-items: center;
 }
 
-.segmentos-container, .diferenciais-container {
-    margin-top: 50px;
+.segmentos-container, .diferenciais-container, .depoimentos-container {
+    margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
@@ -77,6 +77,14 @@ header h1{
     width: 250px; 
     margin-bottom: 20px;
 }
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
 .diferencial img {
     display: block;
     margin: 0 0;
@@ -87,7 +95,12 @@ header h1{
     margin: 0 auto;
     max-width: 250px;
 }
-
+.depoimento img {
+    display: block;
+    margin: 0 auto;
+    max-width: 75px;
+    border-radius: 75%;
+}
 .descricao-diferencial {
     color: maroon;
     width: 100%;
@@ -104,11 +117,14 @@ header h1{
     padding-bottom: 10px;
 
 }
+.descricao-depoimento {
+    color: black;
+    text-align: justify;
+
+}
 .descricao-segmento h3, .descricao-diferencial h3 {
     margin: 0;
 }
-
-
 /* FOOTER */
 
 footer {
@@ -189,18 +205,7 @@ footer {
     text-decoration: none;
 }
 
-/* Depoimentos */
 
-.depoimentos-container {
-    overflow: hidden;
-    max-width: 80%;
-    margin: auto;
-}
-
-.depoimentos-carousel {
-    display: flex;
-    animation: slide 10s infinite linear;
-}
 
 
 
