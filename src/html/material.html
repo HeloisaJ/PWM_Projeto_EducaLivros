@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="../../Nav.css" rel="stylesheet">
         <link href="../css/produtos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/material.css">
         <link rel="stylesheet" href="/assets/fontawesome/css/brands.css">
         <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css">
         <link rel="stylesheet" href="/assets/fontawesome/css/solid.css">
@@ -21,7 +22,7 @@
     <body>
         <header>
             <figure>
-                <!--<img src="/Images/EducaLivros.png" width="200px" height="200px" alt="Logo">-->
+                <img src="/Images/EducaLivros.png" width="200px" height="200px" alt="Logo">
             </figure>
             <form class="search">
                 <input type="text" placeholder="Search" name="search">
@@ -54,7 +55,7 @@
                             <a id="emprestimos">Empréstimos</a> 
                         </div>
                     </li>
-                    <li><a id="login">Login Área Restrita</a></li>
+                    <li><a id="login">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -64,27 +65,34 @@
                     <img src="../../Images/material_didatico/CavaleirosDaToca.jpeg" width="256px" height="256px">
                 </figure>
                 <h3>Os Cavaleiros da Toca</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Mais Informações</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Mais Informações</button>
 
                 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">Os Cavaleiros da Toca</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
                             <div class="modal-body">
                                 <figure>
-                                    <img src="../../Images/material_didatico/CavaleirosDaToca.jpeg" width="300px" height="300px">
+                                    <img src="../../Images/material_didatico/CavaleirosDaToca.jpeg" width="300px" height="425px">
                                 </figure>
-                                <h3>Descrição</h3>
-                                <p></p>
-                                <h2>R$ 50,00</h2>
-                                <form> <!--colocar input hidden, informaçoes do livro, código do livro-->
+                                <h5>Descrição</h5>
+                                <p>
+                                    Que bilhete misterioso era aquele? Rodrigo tinha ido até a sala dos professores
+                                    para falar com Ricardo sobre a nota baixa que havia tirado na última prova. De
+                                    repente, o professor despediu-se do menino, saiu correndo e deixou um papel com
+                                    palavras estranhas sobre a mesa. Nos dias seguintes, não voltou a dar aula.
+                                </p>
+                                <p>Autor: Marconi Leal</p> 
+                                <p>2ª Edição</p> 
+                                <p>Editora: Cortez </p>
+                                <p>Idioma: Português</p>
+                                <h2>R$ 45,00</h2>
+                                <form> 
                                     <input type="hidden" name="nome_livro" value="CavaleirosDaToca">
-                                    <input type="hidden" name="codigo_livro" value="?">
+                                    <input type="hidden" name="codigo_livro" value="978-8524911262">
                                     <input type="hidden" name="quant_livro" value="1">
                                     <input type="button" name="botãoCompra" value="Comprar">
                                 </form>
@@ -101,27 +109,34 @@
                     <img src="../../Images/material_didatico/GramaticaAprenderEPraticar.jpeg" width="256px" height="256px">
                 </figure>
                 <h3>Aprender e Praticar Gramática</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Mais Informações</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Mais Informações</button>
 
                 <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">Aprender e Praticar Gramática</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
                             <div class="modal-body">
                                 <figure>
-                                    <img src="../../Images/material_didatico/GramaticaAprenderEPraticar.jpeg" width="300px" height="300px">
+                                    <img src="../../Images/material_didatico/GramaticaAprenderEPraticar.jpeg" width="300px" height="425px">
                                 </figure>
-                                <h3>Descrição</h3>
-                                <p></p>
-                                <h2>R$ 30,00</h2>
+                                <h5>Descrição</h5>
+                                <p>
+                                    <strong>Aprender e praticar gramática</strong> é uma obra reconhecida por sua
+                                    linguagem didática, clara e objetiva e por sua funcional abordagem metodológica,
+                                    que, sem deixar de sistematizar e aprofundar os conceitos teóricos, busca prioritariamente
+                                    desenvolver a competência de reflexão e de uso prático da língua pelo estudante.
+                                </p>
+                                <p>Autor: Mauro Ferreira</p> 
+                                <p>4ª Edição</p> 
+                                <p>Editora: FTD</p>
+                                <p>Idioma: Português</p>
+                                <h2>R$ 200,00</h2>
                                 <form>
                                     <input type="hidden" name="nome_livro" value="AprenderEPraticarGramatica">
-                                    <input type="hidden" name="codigo_livro" value="?">
+                                    <input type="hidden" name="codigo_livro" value="978-8532292933">
                                     <input type="hidden" name="quant_livro" value="1">
                                     <input type="button" name="botãoCompra" value="Comprar">
                                 </form>
@@ -138,27 +153,33 @@
                     <img src="../../Images/material_didatico/HistoriaDaArte.jpeg" width="256px" height="256px">
                 </figure>
                 <h3>História da Arte - Volume Único</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Mais Informações</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Mais Informações</button>
 
                 <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">História da Arte - Volume Único</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
                             <div class="modal-body">
                                 <figure>
-                                    <img src="../../Images/material_didatico/HistoriaDaArte.jpeg" width="300px" height="300px">
+                                    <img src="../../Images/material_didatico/HistoriaDaArte.jpeg" width="300px" height="425px">
                                 </figure>
-                                <h3>Descrição</h3>
-                                <p></p>
-                                <h2>R$ 30,00</h2>
+                                <h5>Descrição</h5>
+                                <p>
+                                    <em>História da Arte</em> é uma obra de referência no ensino de história da arte 
+                                    no Brasil. Com linguagem clara e concisa e mais de mil imagens, apresenta um panorama
+                                    do fazer artístico no Ocidente e no Brasil através dos tempos.
+                                </p>
+                                <p>Autor: Graça Proença</p> 
+                                <p>18ª Edição</p>
+                                <p>Editora: Ática Didáticos</p>
+                                <p>Idioma: Português</p>
+                                <h2>R$ 180,00</h2>
                                 <form>
                                     <input type="hidden" name="nome_livro" value="HistoriaDaArte">
-                                    <input type="hidden" name="codigo_livro" value="?">
+                                    <input type="hidden" name="codigo_livro" value="978-8508193363">
                                     <input type="hidden" name="quant_livro" value="1">
                                     <input type="button" name="botãoCompra" value="Comprar">
                                 </form>
@@ -175,27 +196,47 @@
                     <img src="../../Images/material_didatico/MemoriasSherlock.jpeg" width="256px" height="256px">
                 </figure>
                 <h3>As Memórias de Sherlock Holmes</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Mais Informações</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Mais Informações</button>
 
                 <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">As Memórias de Sherlock Holmes</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
                             <div class="modal-body">
                                 <figure>
-                                    <img src="../../Images/material_didatico/MemoriasSherlock.jpeg" width="300px" height="300px">
+                                    <img src="../../Images/material_didatico/MemoriasSherlock.jpeg" width="300px" height="425px">
                                 </figure>
-                                <h3>Descrição</h3>
-                                <p></p>
-                                <h2>R$ 30,00</h2>
+                                <h5>Descrição</h5>
+                                <p>
+                                    <strong>As Memórias de Sherlock Holmes</strong> reúne novas façanhas do mestre de Baker Street,
+                                    o detetive mais amado de toda a literatura policial - incluindo seu embate decisivo com o arquirrival
+                                    professor Moriarty:
+                                </p>
+                                <ul>
+                                    <li>Silver Blaze</li>
+                                    <li>A caixa de papelão</li>
+                                    <li>A face amarela</li>
+                                    <li>O corretor</li>
+                                    <li>A tragédia do Gloria Scott</li>
+                                    <li>O ritual Musgrave</li>
+                                    <li>Os fidalgos de Reigate</li>
+                                    <li>O corcunda</li>
+                                    <li>O paciente residente</li>
+                                    <li>O intérprete grego</li>
+                                    <li>O tratado naval</li>
+                                    <li>O problema final</li>
+                                </ul>
+                                <p>Autor: Arthur Conan Doyle</p> 
+                                <p>Tradução: Maria Luiza X. de A. Borges</p> 
+                                <p>Editora: Zahar</p>
+                                <p>Idioma: Português</p>
+                                <h2>R$ 40,00</h2>
                                 <form>
                                     <input type="hidden" name="nome_livro" value="MemoriasSherlock">
-                                    <input type="hidden" name="codigo_livro" value="?">
+                                    <input type="hidden" name="codigo_livro" value="978-8537812808"> <!--ISBN 13-->
                                     <input type="hidden" name="quant_livro" value="1">
                                     <input type="button" name="botãoCompra" value="Comprar">
                                 </form>
@@ -212,27 +253,33 @@
                     <img src="../../Images/material_didatico/RevolucaoDosBichos.jpeg" width="256px" height="256px">
                 </figure>
                 <h3>A Revolução dos Bichos</h3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">Mais Informações</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">Mais Informações</button>
 
                 <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h2 class="modal-title" id="exampleModalLabel">A Revolução dos Bichos</h2>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                             </div>
                             <div class="modal-body">
                                 <figure>
-                                    <img src="../../Images/material_didatico/RevolucaoDosBichos.jpeg" width="300px" height="300px">
+                                    <img src="../../Images/material_didatico/RevolucaoDosBichos.jpeg" width="300px" height="425px">
                                 </figure>
-                                <h3>Descrição</h3>
-                                <p></p>
+                                <h5>Descrição</h5>
+                                <p>
+                                    Cansados da exploração a que são submetidos pelos humanos, os animais da Granja do Solar 
+                                    rebelam-se contra seus donos e tomam posse da fazenda, com o objetivo de instituir um 
+                                    sistema cooperativo e igualitário, sob o slogan "Quatro pernas bom, duas pernas ruim".
+                                </p>
+                                <p>Autor: George Orwell</p> 
+                                <p>Tradução: Heitor Aquino Ferreira</p> 
+                                <p>Editora: Companhia das Letras</p>
+                                <p>Idioma: Português</p>
                                 <h2>R$ 30,00</h2>
                                 <form>
                                     <input type="hidden" name="nome_livro" value="RevolucaoDosBichos">
-                                    <input type="hidden" name="codigo_livro" value="?">
+                                    <input type="hidden" name="codigo_livro" value="978-8535909555">
                                     <input type="hidden" name="quant_livro" value="1">
                                     <input type="button" name="botãoCompra" value="Comprar">
                                 </form>
@@ -246,8 +293,6 @@
 
         </main>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
