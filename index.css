@@ -84,6 +84,7 @@ header h1{
     width: 500px;
     margin-bottom: 20px;
     background-color: whitesmoke;
+    border-radius: 7.5%;
 }
 .diferencial img {
     display: block;
@@ -120,7 +121,7 @@ header h1{
 .descricao-depoimento {
     color: black;
     text-align: justify;
-
+    padding-inline: 15px;
 }
 .descricao-segmento h3, .descricao-diferencial h3 {
     margin: 0;
