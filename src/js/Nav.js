@@ -14,17 +14,34 @@ const emprestimos = document.getElementById('emprestimos')
 var is_logged = window.localStorage.getItem('login')
 if(is_logged)
 {
+    const str = window.localStorage.getItem('email');
+    let string = '';
+    for(let i = 0; i < str.length; i++)
+    {
+        if(i === 6)
+        {
+            break;
+        }
+        if(str[i] !== '@')
+        {
+            string += str[i];
+        }
+        else
+        {
+            break;
+        }
+    }
     if(is_logged === 'aluno')
     {
-        login_bt.innerHTML = 'Login: aluno'
+        login_bt.innerHTML = string+': aluno';
     }
     else if(is_logged === 'prof')
     {
-        login_bt.innerHTML = 'Login: professor'
+        login_bt.innerHTML = string+': professor';
     }
     else
     {
-        login_bt.innerHTML = 'Login: funcionário'
+        login_bt.innerHTML = string+': funcionário';
     }
 }
 

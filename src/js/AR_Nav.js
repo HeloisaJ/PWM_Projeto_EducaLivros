@@ -28,8 +28,8 @@ consulta_acervo.onclick = () => {
 }
 
 login_bt.onclick = () => {
-    window.localStorage.setItem('login', '')
-    goToPage('login.html')
+    window.localStorage.setItem('login', '');
+    goToPage('login.html');
 }
 
 fardamento.onclick = () => {
