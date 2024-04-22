@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(40, 37, 37);
+}
+
 header h1{
     text-align: center;
     color: white;
@@ -34,8 +38,9 @@ header h1{
 
 #aluno iframe{
     border-style: none;
+    background-color: white;
     width: 100vw;
-    height: 100vh;
+    height: 82vh;
     position: relative;
     bottom: 16px;
 }

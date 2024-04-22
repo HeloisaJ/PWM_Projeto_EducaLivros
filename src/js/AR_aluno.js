@@ -1,5 +1,6 @@
 const black = 'rgb(40, 37, 37)';
 
+const iframe = document.getElementsByName('iframe')[0]
 const list_items = document.getElementById('aluno').getElementsByTagName('li');
 
 let select = list_items[0]
@@ -27,4 +28,18 @@ for(let i = 0; i < list_items.length; i++)
             select = list_items[i];
         }
     })
+}
+
+const quadro = document.getElementById('quadro');
+const notas = document.getElementById('notas');
+const emprestimo = document.getElementById('_emprestimos');
+
+quadro.onclick = () => {
+    iframe.src = '../AR/Quadro.html';
+}
+notas.onclick = () => {
+    iframe.src = '../AR/Notas.html';
+}
+emprestimo.onclick = () => {
+    iframe.src = '../AR/SysOff.html';
 }
