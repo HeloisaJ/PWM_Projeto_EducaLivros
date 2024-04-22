@@ -82,6 +82,9 @@ body {
     -moz-box-sizing: border-box;  
     -webkit-box-sizing: border-box; 
   }
+  .left-menu nav li a i{
+    padding-right: 10px;
+  }
 
 .left-menu nav li a:hover {
     border-bottom: 0px;
@@ -196,6 +199,7 @@ body {
 }
 
 .book button {
+    margin-right: 10px;
     background: #1abc9c;
     border-radius: 6px;
     padding: 6px 6px;
