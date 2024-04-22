@@ -6,6 +6,9 @@
 - José Almir
 
 ## REQUISITOS MÍNIMOS
+- Criação da área restrita
+- Uso da navbar
 
 ## REQUISITOS ADICIONAIS
-- Utilização de javascript
+- Uso de javascript
+- Dropdowns
