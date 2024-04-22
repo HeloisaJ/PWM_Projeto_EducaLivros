@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../js/Nav.js" defer></script>
         <link href="../../Nav.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/cursos.css">
+        <link rel="stylesheet" href="../css/servicos.css">
         <title>Cursos</title>
 
         <link rel="stylesheet" href="/assets/fontawesome/css/brands.css">
@@ -55,7 +55,7 @@
         </header>
 
         <main>
-            <section class="Cursos">
+            <section class="Servicos">
                 <figure>
                     <img src="../../Images/cursos/Robotica.jpg" width="375px" height="375px">
                 </figure>
@@ -66,25 +66,109 @@
                         por isso a EducaLivros desenvolveu um curso de robótica para seus alunos,
                         buscando estimular seu raciocínio lógico e a criatividade. 
                     </p>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">Inscreva-se</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalRobotica">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalRobotica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="exampleModalLabel">Formulário de Inscrição</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <input type="radio" name="cor" value="preto"> <label>Preto</label>
+                                            <input type="radio" name="cor" value="vinho"> <label>Vermelho</label> 
+                                        </fieldset> 
+                                        <br/>
+                                        <input type="hidden" value="Robotica">
+                                        <input type="button" name="botãoCompra" value="Comprar">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
     
-            <section class="Cursos">
+            <section class="Servicos">
                 <figure>
                     <img src="../../Images/cursos/Teatro.jpg" width="375px" height="375px">
                 </figure>
                 <div class="info">
                     <h2>Teatro</h2>
+                    <p>
+                        O teatro é capaz de estimular as habilidades de leitura, escrita e 
+                        memorização, além de ajudar na concentração e no foco. Por isso a EducaLivros
+                        decidiu adicionar um curso de teatro para os seus alunos.
+                    </p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalTeatro">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalTeatro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="exampleModalLabel">Formulário de Inscrição</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <input type="radio" name="cor" value="preto"> <label>Preto</label>
+                                            <input type="radio" name="cor" value="vinho"> <label>Vermelho</label> 
+                                        </fieldset> 
+                                        <br/>
+                                        <input type="hidden" value="Teatro">
+                                        <input type="button" name="botãoCompra" value="Comprar">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
     
-            <section class="Cursos">
+            <section class="Servicos">
                 <figure>
                     <img src="../../Images/cursos/Pintura.jpg" width="375px" height="375px">
                 </figure>
                 <div class="info">
                     <h2>Pintura</h2>
+                    <p>
+                        Nosso curso de pintura tem como objetivo, promover a criatividade e a 
+                        concentração. Além de estimular as habilidades motoras dos alunos e a
+                        capacidade deles se expressarem para o mundo.
+                    </p>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalPintura">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalPintura" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="exampleModalLabel">Formulário de Inscrição</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <input type="radio" name="cor" value="preto"> <label>Preto</label>
+                                            <input type="radio" name="cor" value="vinho"> <label>Vermelho</label> 
+                                        </fieldset> 
+                                        <br/>
+                                        <input type="hidden" value="Pintura">
+                                        <input type="button" name="botãoCompra" value="Comprar">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
