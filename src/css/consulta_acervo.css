@@ -79,11 +79,12 @@ form{
 /* Book */
 
 .book-container{
-    width: 50%;
+    width: 80%;
     margin: 20px auto;
 }
 
 .book{
+    text-align: justify;
     min-height: 300px;
     width: 100%;
     float: left;
@@ -107,6 +108,9 @@ form{
 }
 
 .icon img{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-top: 45px;
     border-radius: 6px;
     height: 200px;
     margin-right: 20px;
