@@ -22,7 +22,7 @@ h2{
     font-weight: bolder;
 }
 
-.Cursos{
+.Servicos{
     border-style: solid;
     border-color:rgb(214, 214, 220);
     border-radius: 0.3em;
@@ -35,24 +35,28 @@ h2{
     color: white;
 }
 
-.Cursos:hover{
+.Servicos:hover{
     border-color: rgb(40, 37, 37);
     transition: border-color .3s;
 }
 
-.Cursos figure{
+.Servicos figure{
     display: block;
     float: left;
     margin-right: 1.5em;
 }
 
-.Cursos .info{
+.Servicos .info{
     margin-top: 5%;
     display: block;
 }
 
-.Cursos .info p{
+.Servicos .info p{
     text-align: justify;
     font-size: large;
     margin-right: 1em;
+}
+
+.Servicos .modal{
+    color: black;
 }
