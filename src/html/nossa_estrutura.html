@@ -1,44 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="shortcut icon" href="Images/EducaLivros.png">
-        <link href="../../Nav.css" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../js/Nav.js" defer></script>
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <h1 id="t">EducaLivros</h1>
-            <nav class="MenuPrincipal">
-                <ul>
-                    <li><a id="bem_vindo">Bem-vindo</a></li>
-                    <li><a id="o_educalivros">O EducaLivros</a></li>
-                    <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
-                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
-                        <div class="dropdown-content">
-                            <a id="fardamento">Fardamento</a> 
-                            <a id="material">Material Didático</a> 
+
+<head>
+    <link rel="shortcut icon" href="Images/EducaLivros.png">
+    <link rel="stylesheet" href="../css/nossa_estrutura.css">
+    <link href="../../Nav.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/Nav.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="top-wrapper">
+            <header>
+                <h1 id="t">EducaLivros</h1>
+                <nav class="MenuPrincipal">
+                    <ul>
+                        <li><a id="bem_vindo">Bem-vindo</a></li>
+                        <li><a id="o_educalivros">O EducaLivros</a></li>
+                        <li><a id="nossa_estrutura">Nossa Estrutura</a></li>
+                        <li class="dropdown"><a href="" draggable="false" class="dropbtn">Produtos</a>
+                            <div class="dropdown-content">
+                                <a id="fardamento">Fardamento</a>
+                                <a id="material">Material Didático</a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
+                            <div class="dropdown-content">
+                                <a id="aulas_particulares">Aulas Particulares</a>
+                                <a id="cursos">Cursos</a>
+                                <a id="esportes">Esportes</a>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a a href="" draggable="false" class="dropbtn" id="nossa_biblioteca">Nossa
+                                Biblioteca</a>
+                            <div class="dropdown-content">
+                                <a id="consulta_acervo">Consulta ao acervo</a>
+                                <a id="ebooks">Ebooks</a>
+                                <a id="emprestimos">Empréstimos</a>
+                            </div>
+                        </li>
+                        <li><a id="login">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="main-wrapper">
+            <div class="content-block">
+                <img src="/Images/nossa_estrutura/mesasDeEstudo.png" alt="">
+                <p><strong>Espaço amplo e confortável:</strong> As salas de estudo em grupo da biblioteca oferecem um ambiente espaçoso e confortável, permitindo que os alunos se concentrem em seus estudos sem sentir-se apertados ou desconfortáveis.
+                    Elas são equipadas com mesas e cadeiras adequadas para grupos de estudo, facilitando a interação entre os membros do grupo e proporcionando conforto ergonômico durante longas sessões de estudo. 
+                    As salas de estudo em grupo estão disponíveis em diferentes horários, permitindo que os alunos agendem sessões de estudo de acordo com suas necessidades e horários disponíveis, promovendo assim a flexibilidade e a conveniência.</p>
+            </div>
+            <div class="content-block">
+                <p><strong>Diversidade e abrangência:</strong> A biblioteca "Educa Livros" oferece um acervo diversificado e abrangente, abrangendo uma ampla variedade de temas, gêneros e áreas de conhecimento. Isso permite atender às necessidades de diferentes
+                 perfis de usuários, desde estudantes universitários até pesquisadores e entusiastas de leitura em geral. A equipe da biblioteca está empenhada em manter o acervo atualizado, incorporando regularmente novas obras, edições revisadas e
+                  materiais de última geração. Isso garante que os usuários sempre tenham acesso a informações e conteúdos relevantes e atualizados.</p>
+                <img src="/Images/nossa_estrutura/acervo_de_livros.png" alt="">
+            </div>
+            <div class="content-block">
+                <img src="/Images/nossa_estrutura/serviçoDeAtendimento.png" alt="">
+                <p><strong>Atendimento personalizado:</strong> A equipe de atendimento da "Educa Livros" oferece um serviço personalizado, atendendo às necessidades individuais de cada usuário. Eles estão sempre dispostos a ajudar e fornecer orientação, seja na busca por 
+                    livros específicos, na utilização de recursos tecnológicos ou no esclarecimento de dúvidas sobre o acervo.
+                    Os funcionários da biblioteca são altamente capacitados e demonstram profissionalismo e cortesia em todas as interações com os usuários. Eles tratam cada pessoa com respeito e atenção, criando um ambiente acolhedor e amigável dentro da biblioteca.</p>
+            </div>
+            <div class="large-content-block">
+                <h1>Nossa Equipe!</h1>
+                <div class="content">
+                    <div class="content-col">
+                        <div class="icon"><img src="/Images/nossa_estrutura/helo.png" alt=""></div>
+                        <div class="text">
+                            <h2>Heloisa</h2>
+                            <span>Gerente do RH</span>
                         </div>
-                    </li>
-                    <li class="dropdown"><a href="" draggable="false" class="dropbtn">Serviços</a>
-                        <div class="dropdown-content">
-                            <a id="aulas_particulares">Aulas Particulares</a> 
-                            <a id="cursos">Cursos</a> 
-                            <a id="esportes">Esportes</a>
+                    </div>
+                    <div class="content-col">
+                        <img src="/Images/nossa_estrutura/almir.png" alt="">
+                        <div class="text">
+                            <h2>Almir</h2>
+                            <span>Gerente de Marketing</span>
                         </div>
-                    </li>
-                    <li class="dropdown"><a a href="" draggable="false" class="dropbtn" id="nossa_biblioteca">Nossa Biblioteca</a>
-                        <div class="dropdown-content">
-                            <a id="consulta_acervo">Consulta ao acervo</a> 
-                            <a id="ebooks">Ebooks</a>
-                            <a id="emprestimos">Empréstimos</a> 
+                    </div>
+                    <div class="content-col">
+                        <img src="/Images/nossa_estrutura/joao.png" alt="">
+                        <div class="text">
+                            <h2>Almir</h2>
+                            <span>Chefe do Departamento</span>
                         </div>
-                    </li>
-                    <li><a id="login">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+                    </div>
+                    <div class="content-col">
+                        <img src="/Images/nossa_estrutura/serviçoDeAtendimento.png" alt="">
+                        <div class="text">
+                            <h2>Flavio</h2>
+                            <span>Administrador do Sistema</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="links">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <h3>Contato</h3>
+                    <p>R. do Príncipe, 526 - Boa Vista, Recife - PE - 50050-900</p>
+                    <p><strong>Email:</strong> <a
+                            href="mailto:educalivrosbiblioteca@gmail.com">educalivrosbiblioteca@gmail.com</a></p>
+                    <!--Protocolo Mailto-->
+                    <p><strong>Telefone:</strong> (81) 91234-5678</p>
+                </div>
+                <div class="social">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal">
+                <p>&copy; 2024 EducaLivros. Todos os direitos reservados.</p>
+                <a href="politicaDePrivacidade.html">Política de
+                    Privacidade</a> | <a href="termosDeserviço.html">Termos de Serviço</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
 </html>

@@ -1,0 +1,196 @@
+html, body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-main{
+    width: 100%;
+    min-height: 100%;
+}
+
+.top-wrapper{
+    margin-bottom: 100px;
+}
+
+header{
+    /*border-top: 1rem solid var(--cor-border-top);*/
+    text-align: center;
+    color: var(--cor-letras-Menu);
+    background-color: var(--cor-header);
+    padding-top: 20px;
+    height: 100px;
+    width: 100%;
+}
+
+.main-wrapper{
+    padding-bottom: 20px;
+    display: grid;
+}
+
+.content-block{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: orange;
+    border: 200px;
+    border-color: black;
+    width: 80%;
+    height: 300px;
+    border-radius: 6px;
+    display: flex;
+    text-align: justify;
+}
+
+
+.content-block p{
+    margin: auto auto;
+    height: 200px;
+    max-width: 70%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.content-block img{
+    height: 290px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+}
+
+.large-content-block{
+  height: 600px;
+  background-color: whitesmoke;
+  width: 80%;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.large-content-block h1{
+    text-align: center;
+    color: black;
+}
+
+.content{
+    height: 80%;
+    width: 80%;
+    margin: 20px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    border-radius: 6px;
+    display: flex;
+}
+
+.content-col{
+    margin: auto auto;
+    width: 20%;
+    height: 80%;
+}
+
+.content-col img{
+    margin: 20px auto;
+    margin-left: 10%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; 
+}
+
+.content-col p{
+    padding-top: 10px;
+    text-align: justify;
+    color: #fff;
+}
+.text{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    color: #000;
+}
+
+
+
+
+footer {
+    background-color: black;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    clear: both;
+}
+
+.container {
+    display: flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    flex: 1;
+    margin: 0 0px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contato p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.contato a {
+    color: #fff;
+}
+
+.social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social i {
+    text-align: center;
+    font-size: 24px;
+}
+
+.legal {
+    margin-top: 20px;
+}
+
+.legal p {
+    color: #fff;
+    text-align: center;
+}
+
+.legal a {
+    color: #fff;
+    text-decoration: none;
+}
+
