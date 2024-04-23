@@ -66,7 +66,36 @@
                         alunos na melhoria de seu desempenho na disciplina, quanto preparar os alunos
                         que desejam participar das olímpiadas de matemática. 
                     </p>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">Inscreva-se</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalMatematica">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalMatematica" tabindex="-1" role="dialog" aria-labelledby="modalLabelMatematica" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="modalLabelMatematica">Formulário de Inscrição Matemática</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <legend>Escolha o horário de sua preferência:</legend>
+                                            <input type="radio" name="horarios" value="SegundaEQuarta1"> <label>Segunda e Quarta (14:00 - 16:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaEQuinta1"> <label>Terça e Quinta (14:00 - 16:00)</label> </br>
+                                            <input type="radio" name="horarios" value="SegundaEQuarta2"> <label>Segunda e Quarta (18:00 - 20:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaEQuinta2"> <label>Terça e Quinta (18:00 - 20:00)</label> </br>
+                                        </fieldset> 
+                                        </br>
+                                        <h4>Mensalidade: R$ 150,00</h4>
+                                        </br>
+                                        <input type="hidden" value="Matematica">
+                                        <input type="button" name="botaoCompra" value="Finalizar Inscrição">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
     
@@ -80,7 +109,36 @@
                         Nossa equipe de professores de física desenvolveram um método de ensino,
                         utilizando exemplos práticos, para desmistificar a disciplina. 
                     </p>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">Inscreva-se</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalFisica">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalFisica" tabindex="-1" role="dialog" aria-labelledby="modalLabelFisica" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="modalLabelFisica">Formulário de Inscrição Física</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <legend>Escolha o horário de sua preferência:</legend>
+                                            <input type="radio" name="horarios" value="SegundaEQuinta1"> <label>Segunda e Quinta (14:00 - 16:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaESexta1"> <label>Terça e Sexta (14:00 - 16:00)</label> </br>
+                                            <input type="radio" name="horarios" value="SegundaEQuinta2"> <label>Segunda e Quinta (18:00 - 20:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaESexta2"> <label>Terça e Sexta (18:00 - 20:00)</label> </br>
+                                        </fieldset> 
+                                        </br>
+                                        <h4>Mensalidade: R$ 150,00</h4>
+                                        </br>
+                                        <input type="hidden" value="Fisica">
+                                        <input type="button" name="botaoCompra" value="Finalizar Inscrição">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
     
@@ -95,7 +153,37 @@
                         nativos, voltadas para alunos do ensino médio, visando prepará-los para 
                         avaliações de universidades internacionais.
                     </p>
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal2">Inscreva-se</button>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalIngles">Inscreva-se</button>
+
+                    <div class="modal fade" id="modalIngles" tabindex="-1" role="dialog" aria-labelledby="modalLabelIngles" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title" id="modalLabelIngles">Formulário de Inscrição Inglês</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <fieldset>
+                                            <legend>Escolha o horário de sua preferência:</legend>
+                                            <input type="radio" name="horarios" value="SegundaEQuarta1"> <label>Segunda e Quarta (15:00 - 17:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaEQuinta1"> <label>Terça e Quinta (15:00 - 17:00)</label> </br>
+                                            <input type="radio" name="horarios" value="SegundaEQuarta2"> <label>Segunda e Quarta (18:00 - 20:00)</label> </br>
+                                            <input type="radio" name="horarios" value="TercaEQuinta2"> <label>Terça e Quinta (18:00 - 20:00)</label> </br>
+                                            <input type="radio" name="horarios" value="Sexta"> <label>Sexta (14:00 - 18:00)</label> </br>
+                                        </fieldset>
+                                        </br>
+                                        <h4>Mensalidade: R$ 180,00</h4>
+                                        </br>
+                                        <input type="hidden" value="Ingles">
+                                        <input type="button" name="botaoCompra" value="Finalizar Inscrição">
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
