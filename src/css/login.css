@@ -20,33 +20,38 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-image: url('../../Images/corredor_escola.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 /* LOGIN */
 
 #login_form{
-    background-image: url('../../Images/corredor_escola.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 85%;
-    margin: -0.9% auto;
+    width: 30%;
+    height: 30%;
+    margin: 10% auto;
     text-align: center;
-    /*border: 1px solid;*/
-}  
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: visible;
+}
 
 #login_form #login_part p{
-    width: 25%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.8);
-    margin: 2% auto 2% auto;
+    color: whitesmoke;
+    background-color: maroon;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 0;
 }
 
 #login_form #login_part input[type*=button]{
     display: block;
-    min-width: 15%;
-    background-color: rgba(83, 137, 255, 0.8);
-    margin-bottom: 0.5%;
+    min-width: 30%;
+    background-color: whitesmoke;
+    margin-bottom: 1%;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -54,5 +59,5 @@ html, body {
 }
 
 #login_form #login_part input[type*=button]:hover{
-    background-color: rgba(255, 255, 0, 0.268);
+    background-color: gray;
 }
