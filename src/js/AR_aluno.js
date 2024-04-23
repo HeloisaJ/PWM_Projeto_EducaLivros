@@ -1,6 +1,6 @@
 const black = 'rgb(40, 37, 37)';
 
-const iframe = document.getElementsByName('iframe')[0]
+const iframe = document.getElementById('iframe')
 const list_items = document.getElementById('aluno').getElementsByTagName('li');
 
 let select = list_items[0]
@@ -41,5 +41,5 @@ notas.onclick = () => {
     iframe.src = '../AR/Notas.html';
 }
 emprestimo.onclick = () => {
-    iframe.src = '../AR/SysOff.html';
+    iframe.src = '../AR/emprestimo.html';
 }

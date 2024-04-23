@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="reportar.css" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <forms>
+            <div>
+                <p class="leve">Leve: problema que não afetará ninguém, tem menos prioridade.</p>
+                <p class="medio">Médio: problema que afeta o lazer ou o ambiente de estudo ou aprendizado.</p>
+                <p class="grave">Grave: problema que afeta toda a escola de modo que as aulas terão que ser paradas por um período de tempo.</p>
+            </div>
+            <label for="text">Reportar aqui</label><br>
+            <textarea id="text" placeholder="Ex: problema com o ar-condicionado da sala 103" required></textarea><br>
+            <label for="">Gravidade: </label><br>
+            <input type="radio" id="leve" name="grav" value="leve" checked>
+            <label for="leve">Leve</label>
+            <input type="radio" id="medio" name="grav" value="leve">
+            <label for="medio">Médio</label>
+            <input type="radio" id="grave" name="grav" value="leve">
+            <label for="grave">Grave</label><br>
+            <input type="submit" value="Enviar">
+        </forms>
+    </body>
+</html>

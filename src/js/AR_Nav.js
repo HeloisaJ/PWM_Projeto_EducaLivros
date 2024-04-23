@@ -1,4 +1,5 @@
 const bem_vindo = document.getElementById('bem_vindo')
+const educalivros = document.getElementById('o_educalivros')
 const nossa_estrutura = document.getElementById('nossa_estrutura')
 const consulta_acervo = document.getElementById('consulta_acervo')
 const login_bt = document.getElementById('login')
@@ -58,4 +59,8 @@ aulas_particulares.onclick = () => {
 
 emprestimos.onclick = () => {
     goToPage('emprestimos.html')
+}
+
+educalivros.onclick = () => {
+    goToPage('o_educalivros.html')
 }
