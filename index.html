@@ -200,5 +200,25 @@
                 </div>
             </footer>
         </div>
+        <script>
+            const h1 = document.getElementsByTagName('header')[0].getElementsByTagName('h1')[0];
+            var is_logged = window.localStorage.getItem('login')
+            var clicked = false;
+            if(is_logged && is_logged === 'aluno')
+            {
+                h1.style.cursor = 'pointer';
+                h1.onclick = () => {
+                    if(clicked === false)
+                    {
+                        clicked = true
+                        alert('Você encontrou um EASTER EGG!\nComo recompensa receba 15% de desconto no próximo pagamento de sua mensalidade!');
+                    }
+                    else
+                    {
+                        alert('Segredo já encontrado.');
+                    }
+                }
+            }
+        </script>
 </body>
 </html>
