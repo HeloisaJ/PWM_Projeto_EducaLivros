@@ -1,4 +1,13 @@
 # PWM-Projeto-2
+
+## AVISO
+
+Este é um projeto da disciplina de programação web e mobile que eu fiz com os meus colegas, o objetivo era desenvolver um site para uma escola fictícia, a EducaLivros. Este é um fork do projeto original, para acessar mais informações sobre os outros membros do grupo, acesse o link original do projeto que está abaixo do nome do repositório.
+
+## SOBRE A MINHA PARTICIPAÇÃO NESTE PROJETO
+
+Neste projeto fiquei responsável tanto pelo código HTML, quanto pelo CSS das páginas da seção produtos (que incluem a parte de fardamento e venda de material didático) e da seção de serviços (aulas particulares, cursos e esportes). Além disso, fui responsável pela criação da barra de navegação do site e todos os modais presentes nas páginas que eu citei anteriormente foram criados utilizando Bootstrap.
+
 ## EQUIPE
 - Flávio Simões
 - Heloísa Fernanda
